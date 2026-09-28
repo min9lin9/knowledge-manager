@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.8.3 (2026-09-28)
+- kordoc 최신판 고정: 한글·한국어 문서 변환 호출을 `npx kordoc` → `npx -y kordoc@latest` 로 교체(skills/km-content-extraction.md · .agent/skills/km-content-extraction · .agent/skills/km-workflow). npx 캐시에 옛 판이 남아 있어도 항상 최신판(2026-09-28 확인 = 4.15.7)을 받는다.
+- 안내 갱신: 지원 형식에 이미지(OCR) 추가 · 「PDF 는 `pdfjs-dist@4` peer 필요」 문구 삭제(4.15.7 은 선택 의존성으로 자동 설치 — HWP·PDF 변환 실측 OK) · `--ocr`·`--formula-ocr`·`--format chunks` 옵션 안내.
+- 매니페스트: .claude-plugin 1.8.2→1.8.3 · .codex-plugin 1.8.2→1.8.3(동시) · tier2 시험 버전 고정 2줄 1.8.3.
+
 ## 1.8.2 (2026-09-24)
 - /km:knowledge-manager STEP 0: `/using-superpowers` 강제 호출 게이트 제거(아키텍처 Phase 0 요약 · STEP 0 제목 · MANDATORY 배너 · 0-PRE MUST 3줄). superpowers 는 비자명 build/bug 착수 때만 부르는 운영 방침에 맞춤. km-pipeline 오버레이 참조는 그대로 둠.
 - skills/km-pipeline.md: 같은 강제 문구 5곳 제거(Constraints 1번 · Mandatory Skills 표 행 · Phase 0 의 MUST 줄과 제목 「스킬 활성화」 · 「추가된 것」 표 행 · Final Reminder 1번). 뒤 번호를 당기고 「세 가지 → 두 가지 절대 규칙」. Phase 0 의 모드 감지·선호도 수집 줄은 유지.
